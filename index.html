@@ -58,6 +58,11 @@
           // Success message
           document.getElementById('successMessage').style.display = 'block';
           document.getElementById('successMessage').textContent = result.message;
+
+          // Redirect to login page after successful registration
+          setTimeout(() => {
+            window.location.href = 'login.html';  // เปลี่ยนไปหน้า login
+          }, 2000);  // รอ 2 วินาทีก่อนจะเปลี่ยนหน้า
         } else {
           // Error message
           document.getElementById('errorMessage').style.display = 'block';
